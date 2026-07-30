@@ -1,0 +1,4 @@
+interface:
+  display_name: "抖音代码口播视频"
+  short_description: "生成双人竖屏代码口播视频，并完成全局对齐与最终媒体质检"
+  default_prompt: "Use $douyin-code-explainer-video to turn this Chinese script into a dialogue-aware, fully QA-gated 9:16 HyperFrames video."
