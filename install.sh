@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo_url="https://github.com/Mr-funny/douyin-code-explainer-video.git"
-skill_name="douyin-code-explainer-video"
+repo_url="https://github.com/Mr-funny/hbg-douyin-code-explainer-video.git"
+skill_name="hbg-douyin-code-explainer-video"
+legacy_skill_name="douyin-code-explainer-video"
 install_kind="codex"
 custom_target=""
 
@@ -51,6 +52,7 @@ else
 fi
 
 target_dir="$skills_root/$skill_name"
+legacy_dir="$skills_root/$legacy_skill_name"
 temp_dir=$(mktemp -d)
 cleanup() {
   [[ -d "$temp_dir" ]] && rm -r "$temp_dir"
@@ -60,6 +62,11 @@ trap cleanup EXIT
 git clone --depth 1 "$repo_url" "$temp_dir/repo" >/dev/null
 
 mkdir -p "$skills_root"
+if [[ ! -e "$target_dir" && -e "$legacy_dir" ]]; then
+  legacy_backup="${legacy_dir}.backup.$(date +%Y%m%d-%H%M%S)"
+  mv "$legacy_dir" "$legacy_backup"
+  echo "Backed up legacy skill to $legacy_backup"
+fi
 if [[ -e "$target_dir" ]]; then
   backup_dir="${target_dir}.backup.$(date +%Y%m%d-%H%M%S)"
   mv "$target_dir" "$backup_dir"

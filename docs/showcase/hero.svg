@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
-  <title id="title">Douyin Code Explainer Video</title>
+  <title id="title">HBG Douyin Code Explainer Video</title>
   <desc id="desc">A warm editorial banner showing a vertical code-generated video, dialogue audio, Whisper alignment and final QA.</desc>
   <defs>
     <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
@@ -24,8 +24,8 @@
   <circle cx="1030" cy="660" r="220" fill="#32756a" opacity="0.08"/>
 
   <g transform="translate(86 82)">
-    <rect width="208" height="38" rx="19" fill="#173c3a"/>
-    <text x="104" y="25" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="700" fill="#fff9ed" letter-spacing="2">AGENT SKILL</text>
+    <rect width="248" height="38" rx="19" fill="#173c3a"/>
+    <text x="124" y="25" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="700" fill="#fff9ed" letter-spacing="2">HBG · AGENT SKILL</text>
 
     <text x="0" y="112" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="67" font-weight="900" fill="#25221f">抖音代码口播视频</text>
     <text x="0" y="166" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" font-weight="700" fill="#81776d" letter-spacing="1.5">DOUYIN CODE EXPLAINER VIDEO</text>

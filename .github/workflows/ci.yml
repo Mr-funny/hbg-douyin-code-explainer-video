@@ -33,7 +33,7 @@ jobs:
               if ":" in line:
                   key, value = line.split(":", 1)
                   fields[key.strip()] = value.strip()
-          assert fields.get("name") == "douyin-code-explainer-video"
+          assert fields.get("name") == "hbg-douyin-code-explainer-video"
           assert fields.get("description"), "description is required"
           assert set(fields) == {"name", "description"}, "only name and description are allowed"
           PY

@@ -1,5 +1,5 @@
 ---
-name: douyin-code-explainer-video
+name: hbg-douyin-code-explainer-video
 description: Create and quality-gate Chinese 9:16 Douyin explainer videos using deterministic HTML/CSS/SVG/GSAP in HyperFrames, dialogue-aware local Qwen or Edge TTS, global Whisper alignment, speech-synced visuals, continuous transitions, stable instrumental BGM, and final encoded-media inspection. Use for commentary, educational formulas, workplace or growth scripts, faceless code-generated videos, or fixing portrait sizing, element alignment, premature reveals, blank transitions, narration sync, BGM pumping, or visual-continuity defects.
 ---
 

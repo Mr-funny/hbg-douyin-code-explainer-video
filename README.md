@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Mr-funny/douyin-code-explainer-video/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Mr-funny/douyin-code-explainer-video/ci.yml?branch=main&style=flat-square&label=CI" alt="CI" /></a>
+  <a href="https://github.com/Mr-funny/hbg-douyin-code-explainer-video/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Mr-funny/hbg-douyin-code-explainer-video/ci.yml?branch=main&style=flat-square&label=CI" alt="CI" /></a>
   <img src="https://img.shields.io/badge/Agent%20Skill-SKILL.md-8b5cf6?style=flat-square" alt="Agent Skill" />
   <img src="https://img.shields.io/badge/Canvas-1080%C3%971920-e96e3d?style=flat-square" alt="1080x1920" />
   <img src="https://img.shields.io/badge/Visuals-code%20only-32756a?style=flat-square" alt="Code-only visuals" />
@@ -24,14 +24,14 @@
 把下面整段话直接发给 Codex、Claude Code，或其他支持 `SKILL.md` 的 Agent：
 
 ```text
-请从 https://github.com/Mr-funny/douyin-code-explainer-video 安装
-douyin-code-explainer-video skill。
+请从 https://github.com/Mr-funny/hbg-douyin-code-explainer-video 安装
+hbg-douyin-code-explainer-video skill。
 
 请自动识别当前 Agent 的全局 skills 目录；如果已经存在旧版本，请先备份再更新。
 安装后检查 SKILL.md、references 和 scripts 是否完整，并运行 bash -n 检查两个脚本。
 不要读取、打印或上传任何本地 TTS 模型、音色、API Key、视频、音频或项目素材。
 
-验证完成后，告诉我如何使用 $douyin-code-explainer-video
+验证完成后，告诉我如何使用 $hbg-douyin-code-explainer-video
 把中文长文案制作成双人对话式 1080×1920 抖音代码动画视频。
 ```
 
@@ -49,7 +49,7 @@ Agent 会完成：
 安装后直接说：
 
 ```text
-使用 $douyin-code-explainer-video 处理下面的文案。
+使用 $hbg-douyin-code-explainer-video 处理下面的文案。
 先拆男女角色和语义场景，再生成连续 TTS，使用全局 Whisper 对齐，
 最后制作 1080×1920 的代码动画并完成最终 MP4 视觉与媒体质检。
 ```
@@ -101,34 +101,34 @@ Agent 会完成：
 ### 方法二：安装到 Codex
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Mr-funny/douyin-code-explainer-video/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Mr-funny/hbg-douyin-code-explainer-video/main/install.sh | sh
 ```
 
 默认安装到：
 
 ```text
-${CODEX_HOME}/skills/douyin-code-explainer-video
+${CODEX_HOME}/skills/hbg-douyin-code-explainer-video
 ```
 
 如果没有设置 `CODEX_HOME`，则使用：
 
 ```text
-~/.codex/skills/douyin-code-explainer-video
+~/.codex/skills/hbg-douyin-code-explainer-video
 ```
 
 ### 方法三：安装到 Claude Code
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Mr-funny/douyin-code-explainer-video/main/install.sh | sh -s -- --claude
+curl -fsSL https://raw.githubusercontent.com/Mr-funny/hbg-douyin-code-explainer-video/main/install.sh | sh -s -- --claude
 ```
 
 ### 方法四：手动安装
 
 ```bash
-git clone https://github.com/Mr-funny/douyin-code-explainer-video.git
-mkdir -p ~/.codex/skills/douyin-code-explainer-video
-cp SKILL.md ~/.codex/skills/douyin-code-explainer-video/
-cp -R agents references scripts ~/.codex/skills/douyin-code-explainer-video/
+git clone https://github.com/Mr-funny/hbg-douyin-code-explainer-video.git
+mkdir -p ~/.codex/skills/hbg-douyin-code-explainer-video
+cp SKILL.md ~/.codex/skills/hbg-douyin-code-explainer-video/
+cp -R agents references scripts ~/.codex/skills/hbg-douyin-code-explainer-video/
 ```
 
 ## 🤖 使用示例
@@ -136,7 +136,7 @@ cp -R agents references scripts ~/.codex/skills/douyin-code-explainer-video/
 ### 长篇观点文案
 
 ```text
-使用 $douyin-code-explainer-video，把这篇“沉没成本”文案制作成抖音竖屏视频。
+使用 $hbg-douyin-code-explainer-video，把这篇“沉没成本”文案制作成抖音竖屏视频。
 前面的疑问与人物原话使用女声，解释部分使用男声。
 画面只用代码绘制，不准使用生图或生视频工具。
 ```
@@ -144,7 +144,7 @@ cp -R agents references scripts ~/.codex/skills/douyin-code-explainer-video/
 ### 数学或概率讲解
 
 ```text
-使用 $douyin-code-explainer-video 处理这篇贝叶斯定理文案。
+使用 $hbg-douyin-code-explainer-video 处理这篇贝叶斯定理文案。
 口播使用自然中文，画面公式显示标准数学记号。
 所有数字和最终概率必须在对应口播出现后才揭示。
 ```
@@ -152,7 +152,7 @@ cp -R agents references scripts ~/.codex/skills/douyin-code-explainer-video/
 ### 指定 Edge TTS
 
 ```text
-使用 $douyin-code-explainer-video。
+使用 $hbg-douyin-code-explainer-video。
 这次使用 Edge TTS 男女两个音色，语速 +20%，
 先生成完整说话人段落，再全局 Whisper 对齐，不要按视觉场景切音频。
 ```
@@ -160,7 +160,7 @@ cp -R agents references scripts ~/.codex/skills/douyin-code-explainer-video/
 ### 修复已有代码视频
 
 ```text
-使用 $douyin-code-explainer-video 检查这个 HyperFrames 项目。
+使用 $hbg-douyin-code-explainer-video 检查这个 HyperFrames 项目。
 重点排查人物悬空、元素错位、提前露出、空白转场、BGM 抽吸和最终 MP4 编码问题。
 发现问题后生成新的修订文件，不覆盖旧审片版本。
 ```
@@ -295,7 +295,7 @@ scripts/final_media_qa.sh final.mp4 qa/final
 ## 🗂️ 项目结构
 
 ```text
-douyin-code-explainer-video/
+hbg-douyin-code-explainer-video/
 ├── SKILL.md                       # Agent 核心工作流
 ├── agents/openai.yaml             # Skill UI 元数据
 ├── references/
