@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">Douyin Code Explainer Video</title>
+  <desc id="desc">A warm editorial banner showing a vertical code-generated video, dialogue audio, Whisper alignment and final QA.</desc>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#d8d0c3" stroke-width="1" opacity="0.38"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#173c3a" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="phoneBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff9ed"/>
+      <stop offset="1" stop-color="#f0e7d8"/>
+    </linearGradient>
+    <clipPath id="screenClip">
+      <rect x="900" y="94" width="286" height="508" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1400" height="720" rx="28" fill="#f4efe4"/>
+  <rect width="1400" height="720" rx="28" fill="url(#grid)"/>
+  <path d="M0 610C250 545 430 680 692 610C930 547 1110 558 1400 636V720H0Z" fill="#173c3a" opacity="0.06"/>
+  <circle cx="1270" cy="86" r="170" fill="#e96e3d" opacity="0.08"/>
+  <circle cx="1030" cy="660" r="220" fill="#32756a" opacity="0.08"/>
+
+  <g transform="translate(86 82)">
+    <rect width="208" height="38" rx="19" fill="#173c3a"/>
+    <text x="104" y="25" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="700" fill="#fff9ed" letter-spacing="2">AGENT SKILL</text>
+
+    <text x="0" y="112" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="67" font-weight="900" fill="#25221f">抖音代码口播视频</text>
+    <text x="0" y="166" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" font-weight="700" fill="#81776d" letter-spacing="1.5">DOUYIN CODE EXPLAINER VIDEO</text>
+
+    <text x="0" y="232" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="600" fill="#25221f">从中文长文案到可发布的 9:16 成片</text>
+    <text x="0" y="272" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="21" fill="#81776d">连续双人 TTS · 全局 Whisper · 代码动画 · 最终 MP4 QA</text>
+
+    <g transform="translate(0 326)">
+      <rect width="228" height="74" rx="18" fill="#fff9ed" stroke="#32756a" stroke-width="3"/>
+      <circle cx="40" cy="37" r="19" fill="#32756a"/>
+      <path d="M31 37l6 6 13-15" fill="none" stroke="#fff9ed" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="72" y="31" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="800" fill="#25221f">1080×1920</text>
+      <text x="72" y="53" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#81776d">24 FPS / 9:16</text>
+    </g>
+
+    <g transform="translate(246 326)">
+      <rect width="228" height="74" rx="18" fill="#fff9ed" stroke="#e96e3d" stroke-width="3"/>
+      <path d="M27 27h25M27 37h25M27 47h25" stroke="#e96e3d" stroke-width="5" stroke-linecap="round"/>
+      <text x="72" y="31" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="800" fill="#25221f">纯代码画面</text>
+      <text x="72" y="53" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#81776d">HTML / SVG / GSAP</text>
+    </g>
+
+    <g transform="translate(492 326)">
+      <rect width="228" height="74" rx="18" fill="#fff9ed" stroke="#25221f" stroke-width="3"/>
+      <path d="M27 43c8-22 14 22 22 0s14 22 22 0" fill="none" stroke="#25221f" stroke-width="4" stroke-linecap="round"/>
+      <text x="88" y="31" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="800" fill="#25221f">全局对齐</text>
+      <text x="88" y="53" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#81776d">WHISPER + LLM</text>
+    </g>
+
+    <g transform="translate(0 435)">
+      <path d="M0 0H720" stroke="#bdb4a7" stroke-width="2"/>
+      <circle cx="12" cy="40" r="12" fill="#e96e3d"/>
+      <circle cx="250" cy="40" r="12" fill="#32756a"/>
+      <circle cx="488" cy="40" r="12" fill="#25221f"/>
+      <path d="M25 40H237M263 40H475M501 40H710" stroke="#81776d" stroke-width="3" stroke-dasharray="8 10"/>
+      <text x="0" y="82" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#25221f">连续 TTS</text>
+      <text x="226" y="82" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#25221f">口播同步</text>
+      <text x="458" y="82" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#25221f">最终 QA</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="875" y="70" width="336" height="558" rx="44" fill="#25221f"/>
+    <rect x="900" y="94" width="286" height="508" rx="28" fill="url(#phoneBg)"/>
+  </g>
+
+  <g clip-path="url(#screenClip)">
+    <rect x="900" y="94" width="286" height="508" fill="url(#phoneBg)"/>
+    <path d="M920 132H1164" stroke="#81776d" stroke-width="2"/>
+    <text x="922" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="700" fill="#81776d">CODE VIDEO / 01—28</text>
+    <text x="922" y="178" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="29" font-weight="900" fill="#25221f">值得，还是</text>
+    <text x="922" y="214" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="29" font-weight="900" fill="#25221f">只是舍不得？</text>
+
+    <rect x="922" y="254" width="106" height="76" rx="16" fill="#c9dfd9" stroke="#32756a" stroke-width="3"/>
+    <rect x="1058" y="254" width="106" height="76" rx="16" fill="#f3c0a6" stroke="#e96e3d" stroke-width="3"/>
+    <text x="975" y="286" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="800" fill="#25221f">未来值得</text>
+    <text x="975" y="310" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" fill="#32756a">继续</text>
+    <text x="1111" y="286" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="800" fill="#25221f">只是舍不得</text>
+    <text x="1111" y="310" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" fill="#e96e3d">留下</text>
+
+    <circle cx="1043" cy="375" r="26" fill="#25221f"/>
+    <path d="M1043 400V454M1043 418L1008 442M1043 418L1078 442M1043 454L1016 506M1043 454L1070 506" stroke="#25221f" stroke-width="9" stroke-linecap="round"/>
+    <path d="M978 508H1110" stroke="#25221f" stroke-width="9" stroke-linecap="round"/>
+    <rect x="1086" y="402" width="74" height="82" fill="#f3c0a6" stroke="#e96e3d" stroke-width="4"/>
+    <path d="M1104 402V380c0-28 39-28 39 0v22" fill="none" stroke="#e96e3d" stroke-width="8" stroke-linecap="round"/>
+    <text x="1123" y="450" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="900" fill="#be4d27">套牢</text>
+
+    <rect x="920" y="534" width="246" height="42" rx="13" fill="#173c3a"/>
+    <text x="1043" y="560" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="700" fill="#fff9ed">画面必须跟着口播继续</text>
+    <rect x="920" y="587" width="246" height="5" rx="2.5" fill="#d2cbc0"/>
+    <rect x="920" y="587" width="184" height="5" rx="2.5" fill="#e96e3d"/>
+  </g>
+
+  <g transform="translate(1232 164)">
+    <rect width="116" height="44" rx="22" fill="#fff9ed" stroke="#32756a" stroke-width="2"/>
+    <circle cx="24" cy="22" r="9" fill="#32756a"/>
+    <path d="M20 22l3 3 6-7" fill="none" stroke="#fff9ed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="43" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#25221f">LAYOUT</text>
+  </g>
+  <g transform="translate(1206 226)">
+    <rect width="142" height="44" rx="22" fill="#fff9ed" stroke="#e96e3d" stroke-width="2"/>
+    <circle cx="24" cy="22" r="9" fill="#e96e3d"/>
+    <path d="M20 22l3 3 6-7" fill="none" stroke="#fff9ed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="43" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#25221f">FINAL MP4</text>
+  </g>
+  <g transform="translate(1232 288)">
+    <rect width="116" height="44" rx="22" fill="#fff9ed" stroke="#25221f" stroke-width="2"/>
+    <circle cx="24" cy="22" r="9" fill="#25221f"/>
+    <path d="M20 22l3 3 6-7" fill="none" stroke="#fff9ed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="43" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#25221f">SYNC</text>
+  </g>
+</svg>

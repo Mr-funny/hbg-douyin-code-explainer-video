@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check shell syntax
+        run: |
+          bash -n install.sh
+          bash -n scripts/mix_bgm.sh
+          bash -n scripts/final_media_qa.sh
+
+      - name: Validate skill frontmatter
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          text = Path("SKILL.md").read_text(encoding="utf-8")
+          assert text.startswith("---\n"), "SKILL.md must start with YAML frontmatter"
+          _, frontmatter, _ = text.split("---", 2)
+          fields = {}
+          for line in frontmatter.splitlines():
+              if ":" in line:
+                  key, value = line.split(":", 1)
+                  fields[key.strip()] = value.strip()
+          assert fields.get("name") == "douyin-code-explainer-video"
+          assert fields.get("description"), "description is required"
+          assert set(fields) == {"name", "description"}, "only name and description are allowed"
+          PY
+
+      - name: Check installer help
+        run: ./install.sh --help
